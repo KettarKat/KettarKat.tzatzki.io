@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="container">
+            <div class="header__inner">
+              <div class="header__logo">
+                <a href="#" class="header__logo-icon"></a>
+              </div>
+              <div class="header__menu">
+                <ul class="menu__list">
+                  <li>
+                    <a href="shop.html" class="menu__links">КАТАЛОГ</a>
+                    <div class="dropdown__menu">
+                      <a href="#" class="dropdown__menu-links active">Все изделия</a>
+                      <a href="#" class="dropdown__menu-links">Серьги</a>
+                      <a href="#" class="dropdown__menu-links">Кольца</a>
+                      <a href="#" class="dropdown__menu-links">Подвески</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="about.html" class="menu__links">О НАС</a>
+                  </li>
+                  <li>
+                    <a href="#" class="menu__links">ИНФО</a>
+                    <div class="dropdown__menu dropdown__menu-info">
+                      <a href="delivery.html" class="dropdown__menu-links active">Доставка</a>
+                      <a href="payment.html" class="dropdown__menu-links">Оплата и возврат</a>
+                      <a href="care.html" class="dropdown__menu-links">Уход за изделиями</a>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="contacts.html" class="menu__links">КОНТАКТЫ</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="header__box">
+                <a href="liked-products.html" class="favorites-item"></a>
+                <a href="basket.html" class="basket-item">
+                  <span>2</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="breadcrumbs">
+        <div class="container">
+          <div class="breadcrumbs__inner">
+            <ul class="breadcrumbs__list">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Корзина</a></li>
+              <li><span>Оформление заказа</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="order">
+        <div class="container">
+          <div class="order__inner">
+            <h1 class="title">ОФОРМЛЕНИЕ ЗАКАЗА</h1>
+            <h3>Детали оплаты</h3>
+            <form action="">
+              <fieldset class="order__aside">
+                <label>Имя и фамилия
+                  <input class="order__input" type="text">
+                </label>
+                <label>Страна
+                  <select name="country" id="">
+                    <option value="Russia">Россия</option>
+                    <option value="Belarus">Беларусь</option>
+                    <option value="Kazakhstan">Казахстан</option>
+                    <option value="Tajikistan">Таджикистан</option>
+                  </select>
+                </label>
+                <label>Город
+                  <select name="town" id="">
+                    <option value="moscow">Москва</option>
+                    <option value="saint-petersburg">Санкт-Петербург</option>
+                    <option value="ekaterinburg">Екатеринбург</option>
+                    <option value="chelyabinsk">Челябинск</option>
+                    <option value="novosibirsk">Новосибирск</option>
+                  </select>
+                </label>
+                <label>Адрес
+                  <input class="order__input" type="text" placeholder="Номер дома и название улицы">
+                </label>
+                <label>Телефон
+                  <input class="order__input" type="tel">
+                </label>
+                <label>Email
+                  <input class="order__input" type="email">
+                </label>
+                <div class="order__checkbox">
+                  <input type="checkbox" name="info">
+                  <p>
+                    Нажимая кнопку «Оплатить» вы даете согласие на обработку ваших персональных данных
+                  </p>
+                </div>
+                <div class="order__checkbox">
+                  <input type="checkbox" name="info">
+                  <p>Подписаться на рассылку</p>
+                </div>
+              </fieldset>
+              <fieldset class="order__product">
+                <label class="order__product-label">Ваш заказ</label>
+                <div class="order__product-box">
+                  <div class="order__product-item order__product-header">
+                    <p>Товар</p>
+                    <p>Сумма</p>
+                  </div>
+                  <div class="order__product-item">
+                    <p>
+                      <a href="#" class="order__product-name">Минималистичные серьги</a>
+                      <span class="order__product-number">1</span>
+                    </p>
+                    <p class="order__product-price">580 руб.</p>
+                  </div>
+                  <div class="order__product-item">
+                    <p>
+                      <a href="#" class="order__product-name">Мужское кольцо</a>
+                      <span class="order__product-number">2</span>
+                    </p>
+                    <p class="order__product-price">700 руб.</p>
+                  </div>
+                </div>
+                <div class="order__product-box order__product-info">
+                  <label>Способ доставки
+                    <select name="delivery" id="">
+                      <option class="pickup" value="pickup" selected>Самовывоз 
+                      </option>
+                      <option class="delivery" value="delivery">Доставка по РФ</option>
+                    </select>
+                    <a href="#" class="order__product-address">Екатеринбург, Ольховская 2 ТЦ «Пекин»</a>
+                    <a href="#" class="order__product-delivery">Выберите пункт выдачи СДЭК</a>
+                  </label>
+                  <div class="order__product-pay"> 
+                    <label for="payment">Варианты оплаты</label>
+                    <div class="order__product-row">
+                      <input type="radio" name="payment" value="online" checked>
+                      <p>
+                        Банковской картой онлайн
+                      </p>
+                    </div>
+                    <div class="order__product-row">
+                    <input type="radio" name="payment" value="offline">
+                    <p>
+                      Наличными и банковской картой при получении
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="order__product-sum">
+                  <p>
+                    ИТОГО:
+                  <span>1280 руб.</span>
+                  </p> 
+                </div>
+                <button type="submit" class="order__product-btn black-btn">ОПЛАТИТЬ</button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="contaiter">
+          <div class="footer__inner">
+            <div class="footer__item">
+              <div class="footer__item-social">
+                <ul>
+                  <li>
+                    <a href="#" style="background-image: url(images/icons/vk.svg);"></a>
+                  </li>
+                  <li>
+                    <a href="#" style="background-image: url(images/icons/inst.svg);"></a>
+                  </li>
+                  <li>
+                    <a href="#" style="background-image: url(images/icons/fb.svg);"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="footer__item-news">
+                <h4 class="footer__item-title">РАССЫЛКА НОВОСТЕЙ</h4>
+                <form>
+                  <label for="" class="footer__item-email">
+                    <input type="text" placeholder="Введите ваш e-mail" required>
+                  </label>
+                  <button type="submit" class="black-btn">ПОДПИСАТЬСЯ</button>
+                </form>
+              </div>
+            </div>
+            <div class="footer__item">
+              <div class="header__logo">
+                <a href="#" class="header__logo-icon"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script id="ISDEKscript" type="text/javascript" src="https://widget.cdek.ru/widget/widjet.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
