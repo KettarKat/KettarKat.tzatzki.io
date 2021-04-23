@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
   <div class="wrapper">
@@ -18,7 +19,7 @@
               <div class="header__logo">
                 <a href="#" class="header__logo-icon"></a>
               </div>
-              <div class="header__menu">
+              <nav class="header__menu">
                 <ul class="menu__list">
                   <li>
                     <a href="shop.html" class="menu__links">КАТАЛОГ</a>
@@ -44,12 +45,13 @@
                     <a href="contacts.html" class="menu__links">КОНТАКТЫ</a>
                   </li>
                 </ul>
-              </div>
+              </nav>
               <div class="header__box">
                 <a href="liked-products.html" class="favorites-item"></a>
                 <a href="basket.html" class="basket-item">
                   <span>2</span>
                 </a>
+                <div class="header__menu-btn"></div>
               </div>
             </div>
           </div>
@@ -67,6 +69,9 @@
       </div>
       <section class="liked-product">
         <div class="container">
+          <h1 class="about__title title">
+            ПОНРАВИВШИЕСЯ ТОВАРЫ
+          </h1>
           <div class="liked-product__inner">
             <div class="product__item">
               <a href="#" class="product__item-img" style="background-image: url(images/content/item-1.jpg);"></a>
