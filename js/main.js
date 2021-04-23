@@ -51,7 +51,6 @@ $(function(){
         }
       ]
     });
-
   $('.slick-arrow').on('mouseleave', function() {
     $(this).find('img').attr('src', function(){
         return $(this).data('bw');
@@ -104,18 +103,27 @@ $('.slick-arrow').on('mouseover', function() {
       $(".order__product-address").toggleClass("disabled");
     });
     
-
-    thumbs.onclick = function(event) {
+    $('.header__menu-btn').on('click', function() {
+      $('.menu__list').slideToggle();
+      $('.header__menu-btn').toggleClass('active');
+    })
+    $('#gallery .thumbs a').on('click', function(e) {
+      e.preventDefault();
+      var url = $(this).children('img').attr('src');
+      $('#gallery .full img').animate({
+        opacity: 0
+      }, 280, function() {
+        $('#gallery .full img').attr('src', url);
+        $('#gallery .full img').animate({
+          opacity: 1
+        }, 280);
+      });
+    });
+    var mixer = mixitup('.shop__inner-box');   
+      thumbs.onclick = function(event) {
       let thumbnail = event.target.closest('a');
       if (!thumbnail) return;
       showThumbnail(thumbnail.href, thumbnail.title);
       event.preventDefault();
     }
-
-    function showThumbnail(href, title) {
-      largeImg.src = href;
-      largeImg.alt = title;
-    }
-    
-    var mixer = mixitup('.shop__inner-box');
 });
